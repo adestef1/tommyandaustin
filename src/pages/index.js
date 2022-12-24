@@ -1,7 +1,13 @@
 import React from "react";
 import home_image from "../assets/home_image.jpg"
+import {useNavigate} from 'react-router-dom';
 
 const About = () => {
+    const navigate = useNavigate();
+    const navigateTo2001 = () => {
+      // 👇️ navigate to /contacts
+      navigate('/about');
+    };
     return (
         <div className="App">
             <div className="landing_full">
@@ -13,12 +19,10 @@ const About = () => {
             </div>
             <div className="gallery_title">The Gallery</div>
             <div className="gallery">
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
-                <img className="landing_picture" src={home_image} alt="Austin and Tommy cuddle"></img>
+                <img className="gallery_button" src={home_image} alt="my image" onClick={navigateTo2001} />
+                <img className="gallery_button" src={home_image} alt="my image" onClick={navigateTo2001} />
+                <img className="gallery_button" src={home_image} alt="my image" onClick={navigateTo2001} />
+                <img className="gallery_button" src={home_image} alt="my image" onClick={navigateTo2001} />
             </div>
         </div>
     );
