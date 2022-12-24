@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from 'react-router-dom';
+import logopic from "../../assets/logo.png"
 import { NavLink }
     from "./NavBarElements";
 
@@ -13,9 +14,9 @@ const Navbar = () => {
         <>
             <div className="nav_full">
                 <div className="nav_left" onClick={navigateTo2001}>
-                    <div className="nav-pic" src="./assets/header_logo.png"
-                        alt="Bravehouse logo, with Bravehouse written inside simple drawing of house"></div>
-                    <h1>tommyandaustin.com</h1>
+                    <img className="nav-pic" src={logopic}
+                        alt="logo"></img>
+                    <div className="nav-text">tommyandaustin.com</div>
                 </div>
                 <div id="navbar">
                     <ul class="nav_links">
@@ -25,22 +26,6 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            {/* <Nav>
-        <NavMenu>
-          <NavLink to="/about" activeStyle>
-            About
-          </NavLink>
-          <NavLink to="/contact" activeStyle>
-            Contact Us
-          </NavLink>
-          <NavLink to="/blogs" activeStyle>
-            Blogs
-          </NavLink>
-          <NavLink to="/sign-up" activeStyle>
-            Sign Up
-          </NavLink>
-        </NavMenu>
-      </Nav> */}
         </>
     );
 };

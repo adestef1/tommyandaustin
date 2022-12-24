@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poor+Story&family=Stardos+Stencil:wght@700&display=swap');
+
 body {
   text-align: center;
   align-items: center;
@@ -14,13 +16,24 @@ body {
 }
 
 .nav-pic {
-  width: 60px
+  width: 60px;
+  padding-right: 10px
+}
+
+.nav-text {
+  font-size: 40px;
+  font-family: 'Gochi Hand';
 }
 
 .nav_left {
+  padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav_left:hover {
+  cursor: pointer;
 }
 
 .nav_full {
@@ -35,6 +48,7 @@ body {
   left: 0;
   right: 0;
   height: 70px;
+  z-index: 500
 }
 
 .nav_links {
@@ -80,19 +94,21 @@ body {
 .landing_texts {
   height: 100%;
   display: flex;
+  padding-left: 20px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
 .landing_text {
-  font-size: 50px;
+  font-size: 60px;
+  font-family: 'Poor Story';
 }
 
 .gallery_title {
-  font-size: 50px;
+  font-size: 60px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  font-family: 'Poor Story';
 }
 
 .gallery {
@@ -107,10 +123,41 @@ body {
 }
 
 .gallery_button {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   border-radius: 50px;
   padding: 20px;
+}
+
+.contain {
+  height: 400px;
+  width: 400px;
+  padding: 20px
+}
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  transform: translate(5%, -106%);
+  -ms-transform: translate(5%, -106%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay_text {
+  font-size: 50px;
+  font-family: 'Poor Story';
+}
+
+.overlay:hover {
+  opacity: .8;
+  cursor: pointer;
 }
 
 .App-logo {
