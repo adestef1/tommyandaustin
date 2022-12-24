@@ -6,7 +6,7 @@ const About = () => {
     const navigate = useNavigate();
     const navigateTo2001 = () => {
       // 👇️ navigate to /contacts
-      navigate('/about');
+      navigate('/tommyandaustin/about');
     };
     return (
         <div className="App">

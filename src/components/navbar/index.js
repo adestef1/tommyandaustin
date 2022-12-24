@@ -7,7 +7,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const navigateTo2001 = () => {
       // 👇️ navigate to /contacts
-      navigate('/');
+      navigate('/tommyandaustin');
     };
     return (
         <>
