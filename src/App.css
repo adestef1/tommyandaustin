@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poor+Story&family=Stardos+Stencil:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Khand&family=Poor+Story&family=Stardos+Stencil:wght@700&display=swap');
 
 body {
   text-align: center;
@@ -116,7 +116,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: row;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -157,6 +156,82 @@ body {
 
 .overlay:hover {
   opacity: .8;
+  cursor: pointer;
+}
+
+.gal_item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.gal_pic {
+  height: 200px;
+  width: 100%;
+}
+
+.gal_cap {
+  font-size: 20px;
+  font-family: 'Khand';
+}
+
+.gal_landing_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  padding-top: 100px;
+}
+
+.gal_landing_title {
+  font-size: 100px;
+  font-family: 'Poor Story';
+}
+
+.gal_landing_desc {
+  font-size: 30px;
+  font-family: 'Khand';
+}
+
+.page_gallery {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.b_buttons {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.b_button {
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 170px;
+  border-radius: 25px;
+  font-size: 30px;
+  font-family: 'Khand';
+  background-color: white;
+}
+
+.b_button:hover {
+  border-width: 5px;
+  height: 70px;
+  width: 160px;
+  border-style: solid;
+  border-color: rgb(247, 214, 171);
   cursor: pointer;
 }
 

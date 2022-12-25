@@ -4,6 +4,7 @@ import at_home from "../assets/at_home.jpg"
 import hospital from "../assets/hospital.jpg"
 import china_trip from "../assets/china_trip.jpg"
 import halloween_2002 from "../assets/halloween_2002.jpg"
+import more from "../assets/more.jpg"
 import { useNavigate } from 'react-router-dom';
 
 const About = () => {
@@ -36,20 +37,24 @@ const About = () => {
             <div className="gallery_title">The Galleries</div>
             <div className="gallery">
                 <div className="contain">
-                    <img className="gallery_button" src={hospital} alt="my image" />
+                    <img className="gallery_button" src={hospital} alt="hospital" />
                     <div className="overlay" onClick={navigateToHospital} ><div className="overlay_text">Hospital</div></div>
                 </div>
                 <div className="contain">
-                    <img className="gallery_button" src={at_home} alt="my image" />
+                    <img className="gallery_button" src={at_home} alt="home" />
                     <div className="overlay" onClick={navigateToAtHome}><div className="overlay_text">First Time Home</div></div>
                 </div>
                 <div className="contain">
-                    <img className="gallery_button" src={china_trip} alt="my image" />
+                    <img className="gallery_button" src={china_trip} alt="china" />
                     <div className="overlay" onClick={navigateToChina}><div className="overlay_text">China Trip</div></div>
                 </div>
                 <div className="contain">
-                    <img className="gallery_button" src={halloween_2002} alt="my image" />
+                    <img className="gallery_button" src={halloween_2002} alt="halloween" />
                     <div className="overlay" onClick={navigateToHalloween02}><div className="overlay_text">Halloween 2002</div></div>
+                </div>
+                <div className="contain">
+                    <img className="gallery_button" src={more} alt="more to come" />
+                    <div className="overlay"><div className="overlay_text">More to Come!</div></div>
                 </div>
             </div>
         </div>
