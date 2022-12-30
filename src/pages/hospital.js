@@ -34,7 +34,7 @@ const Hospital = () => {
     <div>
       <div className="gal_landing_text">
         <div className="gal_landing_title">The Hospital</div>
-        <div className="gal_landing_desc">Photos from when Tommy and Austin were born at Mt. Elizabeth Hospital on June 27, 2001.</div>
+        <div className="gal_landing_desc">Photos from when Tommy and Austin were born at Mt. Elizabeth Hospital on June 27, 2001!</div>
       </div>
 
       <div className="page_gallery">
